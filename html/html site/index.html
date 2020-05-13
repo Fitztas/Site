@@ -1,0 +1,210 @@
+<html>
+
+<!-- id="" determines the name in css
+title="" determines hover text
+background-repeat: repeat-y; repeats the image on the axis end to end
+
+this gives inner shadow
+   -moz-box-shadow:    inset 0 0 20px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+
+this determines layer whether it is in front or back etc
+z-index: -1
+
+
+#test {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes example {
+  from {font-size: 15px;}
+  to {font-size: 100px;}
+}
+-->
+<head>
+<div class="side_rect_default" id="side_rect_white">
+<h1 class="news_caption">Verify: Are road crews responsible for the trees alongside roadways?</h1>
+</div>
+
+<div class="side_rect_default" id="side_rect_white1">
+<h2 class="news_caption" id="m_caption">Cost-Effective HR: 5 Things to Know</h2>
+</div>
+
+<div class="side_rect_default" id="side_rect_white2">
+<h2 class="news_caption" id="m_caption">Local Police Face Growing Questions After Killing 6 People in 48 Hours</h2>
+</div>
+
+<div id="side_rect">
+<img class="article_images" id="accident_news" src="images/accident_local.jpg"></img>
+<img class="article_images" id="medication_news" src="images/modication_local.jpg"></img>
+<img class="article_images" id="cop_news" src="images/cop_local.jpg"></img>
+</div>
+
+<div id="yellow_banner"></div>
+<div id="blue_thin_banner">
+
+</div>
+<body>
+<div id="center_piece"></div>
+<div id="copyright_area">
+<h3>
+© 1987 - 2009 Affinity Broadcast Group <br> </br>
+<a href=" "> Privacy policy</a>
+</h3>
+<h4 class="small_texts">Funding for WEST66 HLP-UHF has been discontinued as of Sept. 2009, this page now serves as an archive of the local area.</h4>
+</div>
+
+<img id="logo" src="images/unknown.png"></img>
+<marquee class="font_details"id="sliding_news" behavior="scroll" direction="left">Daily Updates on Weather and Local Climate | Local Government Alerts and Important Information | Local Guides and Reviews by Residents | Storm Updates and Shelter Locations                                                   Daily Updates on Weather and Local Climate | Local Government Alerts and Important Information | Local Guides and Reviews by Residents | Storm Updates and Shelter Locations                                                   Daily Updates on Weather and Local Climate | Local Government Alerts and Important Information | Local Guides and Reviews by Residents | Storm Updates and Shelter Locations                                                     Please sendd help through this small incision</marquee>
+
+<div id="header_buttons">
+<a class="header_link" href="index.html">HOME</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="header_link" href="index_weather.html">WEATHER</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="header_link" href="index_video.html">VIDEO</a>
+</div>
+
+</body>
+<style>
+#yellow_banner {
+width: 1920px;
+height: 100px;
+position: absolute;
+top: 0px;
+background: rgb(255,240,138);
+background: linear-gradient(90deg, rgba(255,240,138,1) 0%, rgba(255,199,77,1) 12%, rgba(255,244,116,1) 100%); 
+}
+
+#blue_thin_banner {
+width: 1920px;
+height: 50px;
+position: absolute;
+top: 100px;
+background: rgb(0,61,164);
+background: linear-gradient(90deg, rgba(0,61,164,1) 0%, rgba(16,73,255,1) 77%, rgba(82,63,255,1) 100%); 
+box-shadow: 1px 1px 1px #000000;
+}
+
+#side_rect {
+width: 380px;
+height: 970px;
+position: relative;
+background: rgb(60,60,60);
+background: linear-gradient(90deg, rgba(60,60,60,1) 0%, rgba(130,130,130,1) 63%, rgba(120,120,120,1) 100%); 
+}
+
+.news_caption {
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+top: 80%;
+left: 2%;
+}
+
+#side_rect_white {
+top: 190px;
+}
+#side_rect_white1 {
+top: 450px;
+}
+#side_rect_white2 {
+top: 710px;
+}
+
+.side_rect_default {
+width: 360px;
+height: 250px;
+position: absolute;
+left: 15px;
+box-shadow: 2px 2px 2px #000000;
+background: rgb(148,148,148);
+background: linear-gradient(90deg, rgba(148,148,148,1) 0%, rgba(198,198,198,1) 63%, rgba(247,247,247,1) 100%); 
+opacity: .5;
+z-index: 1;
+}
+
+#sliding_news {
+position: absolute;
+width: 360px;
+top: 150px;
+left: 19px;
+}
+
+.font_details {
+color: black;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 1px 1px 1px #000000;
+}
+
+#logo {
+width: 190px;
+position: absolute;
+top: -5px;
+left: 50px;
+}
+
+
+.article_images {
+position: relative;
+left: 3%;
+width: 350px;
+z-index: 2;
+box-shadow: 2px 2px 2px #000000;
+}
+
+#accident_news {
+top: 19.5%;
+}
+
+#medication_news {
+width: 350px;
+height:200px;
+top: 26%;
+}
+#m_caption {
+top: 80%;
+}
+
+#cop_news {
+position: absolute;
+top: 705px;
+width: 350px;
+height: 200px;
+}
+
+#copyright_area {
+width: 100%;
+height: 14%;
+position: absolute;
+background: rgb(148,148,148);
+background: linear-gradient(90deg, rgba(148,148,148,1) 0%, rgba(198,198,198,1) 22%, rgba(247,247,247,1) 84%); 
+text-align: center;
+}
+
+.small_texts {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+}
+
+#header_buttons {
+position: absolute;
+left: 600px;
+top: 110px;
+}
+
+.header_link {
+border-radius: 10px;
+border: 10px;
+font-size: 30px;
+color: white;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+</html>
